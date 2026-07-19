@@ -9,37 +9,23 @@ class practical3
 	String inputLine=scanner.nextLine();
 	String[] words=inputLine.split(" ");
 	ArrayList<String> wordsStartingWithB=new ArrayList<>();
-	for(String word:words)
+    for(String word:words)
 	{
-	   if(word.toLowerCase().startsWith("b"))
-	   {
-		   wordsStartingWithB.add(word);
-		   
-	   }
-	}
-	ArrayList<String> wordsEndingWithED=new ArrayList<>();
-	for(String word:words) 
-	{
-		if(word.toUpperCase().endsWith("ED"))
-		{
-			wordsEndingWithED.add(word);
+    if(word.toLowerCase().startsWith("b"))
+    {
+    wordsStartingWithB.add(word);
+													   		   
 		}
 	}
-	System.out.println("Words starting with 'b': "+wordsStartingWithB);
+   ArrayList<String> wordsEndingWithED=new ArrayList<>();
+   for(String word:words) 
+	{
+	if(word.toUpperCase().endsWith("ED"))
+	{
+	wordsEndingWithED.add(word);
+	}
+    }
+    System.out.println("Words starting with 'b': "+wordsStartingWithB);
 	System.out.println("Words ending with 'ED': "+wordsEndingWithED);
-		}
 	}
-
-                                                                                        	System.out.println("Words starting with 'b':"+ wordsStartingWithB);
-
-
-
-                                                                                            	System.out.println("Words ending with 'ED':" + wordsEndingWithED);
-
-                                                                                                	}
-
-                                                                                                    	}
-
-
-
-                                                                                                        
+	}
